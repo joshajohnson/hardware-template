@@ -14,13 +14,18 @@
 ### Note
 * requires python3 and a small number of dependencies
 
+## To generate BOM
+`make bom`
+
+### Note
+* utilises custom BOM format found in `scripts/josh_bom.xsl`
+
 ## To panelise a board
 `make panel`
 
 ### Note
 * Requires `*.kicad_pcb` file to be located at `hardware/ver/panel`
-* Requires [kicad-util](https://gitlab.com/dren.dk/kicad-util) to be installed in `~/Documents/kicad`
-* Directory can be easily altered through modifying `scripts/panel.py`
+* Utilises [kicad-util](https://gitlab.com/dren.dk/kicad-util), which requires java to be installed
 
 ## To generate gerbers for panel
 `make panel-gerb` 

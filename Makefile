@@ -10,8 +10,12 @@ new:
 gerb:
 	python3 scripts/plot_gerbers.py hardware/$(VER)/*.kicad_pcb
 
+bom:
+	cd hardware/0.1 && xsltproc -o "bom/BOM.csv" "/home/josh/Documents/kicad/josh_bom.xsl" *.xml
+
 panel:
 	python3 scripts/panel.py hardware/$(VER)/panel/*.kicad_pcb
+	pcbnew hardware/$(VER)/panel/output-*
 
 panel-gerb:
 	python3 scripts/plot_gerbers.py hardware/$(VER)/panel/output.*

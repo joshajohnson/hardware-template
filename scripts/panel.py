@@ -47,7 +47,7 @@ while(True):
         tabWidth = float(usrTabWidth)
 
     # compose the command line string, may need to change dir for kicadutil.jar
-    cmd = "java -jar ~/Documents/kicad/kicadutil.jar pcb --file={} panel --fillet={} --hole={} --inset={} --pitch={} --width={}".format(filename,filletRadius,holeDia,holeInset,pitch,tabWidth)
+    cmd = "java -jar scripts/kicadutil.jar pcb --file={} panel --fillet={} --hole={} --inset={} --pitch={} --width={}".format(filename,filletRadius,holeDia,holeInset,pitch,tabWidth)
 
     # run the command
     os.system(cmd)
