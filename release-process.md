@@ -172,3 +172,4 @@ off as invalid.
 * [ ] Silkscreen box provided for writing/sticking serial number
 * [ ] Text mirrored properly on bottom layer
 
+Huge thanks to [Andrew Zonenberg](https://github.com/azonenberg/pcb-checklist) whose PCB checklist was modified for use in this document. 
