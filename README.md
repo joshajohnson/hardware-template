@@ -4,9 +4,9 @@
 `make new NAME="project-name" VER="version" DESIGNER="Your Name"`
 
 ### Note 
-* `NAME` is the file name of project and is required
-* `VER` is optional and defaults to 0.1
-* 'DESIGNER' is optional and defaults to `Josh Johnson`
+* `NAME` is the file name of project and is required, no spaces allowed
+* `VER` is optional and defaults to `0.1`
+* `DESIGNER` is optional and defaults to `Josh Johnson`
 
 ## To generate gerbers
 `make gerb` 
