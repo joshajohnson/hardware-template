@@ -21,9 +21,6 @@ fp-info-cache
 *.dsn
 *.ses
 
-# Exported BOM files
-*.xml
-
 # Gerbers
 *.drl
 *.grb
@@ -38,6 +35,5 @@ fp-info-cache
 *.gts
 *.gbr
 
-# Zip and 3D Models
-*.zip
+# 3D Models
 *.step

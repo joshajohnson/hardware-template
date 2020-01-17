@@ -20,7 +20,8 @@
 ## Generate BOM
 `make bom`
 
-* utilises custom BOM format found in `scripts/josh_bom.xsl`
+* utilises custom BOM format found in `scripts/josh_bom.py`
+* requires dependancy to be installed to global scope `pip3 install kicad_netlist_reader`
 
 ## Generate InteractiveHTMLBom
 `make pnp`

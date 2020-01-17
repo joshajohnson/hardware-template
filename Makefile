@@ -16,7 +16,8 @@ gerb:
 	python3 scripts/plot_gerbers.py hardware/$(VERSION)/*.kicad_pcb
 
 bom:
-	cd hardware/$(VERSION) && xsltproc -o "bom/BOM.csv" "../../scripts/josh_bom.xsl" *.xml
+	cd hardware/$(VERSION) && python3 ../../scripts/josh_bom.py *.xml bom/BOM.csv
+	libreoffice --calc hardware/$(VERSION)/bom/BOM.csv
 
 pnp: 
 	cd hardware/$(VERSION) && python3 "$(HOME)/.kicad_plugins/InteractiveHtmlBom/InteractiveHtmlBom/generate_interactive_bom.py" *.kicad_pcb
