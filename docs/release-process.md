@@ -105,6 +105,7 @@ off as invalid
 * [ ] Fiducial pattern asymmetric to detect rotated or flipped boards
 * [ ] Soldermask/copper clearance on fiducials respected
 * [ ] Panelization completed if required
+* [ ] Teardrops added to PTH components / vias
 
 ### Footprints
 
