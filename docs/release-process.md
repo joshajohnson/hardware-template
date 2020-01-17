@@ -1,19 +1,20 @@
 # Board Release Process
 
-* [ ] Ensure [Schematic Review](#schematic-review) is undergone
-* [ ] Ensure [Layout Review](#layout-review) is undergone
-* [ ] Component MPN / Supplier PN information added for all non jelly-bean components
-* [ ] Inspect layout in 3D viewer one last time
+* [ ] Ensure [Schematic Review](#schematic-review) is complete
+* [ ] Ensure [Layout Review](#layout-review) is complete
+* [ ] Component MPN / Supplier PN information added for all components
+* [ ] PDF Schematic is exported from EESchema
 * [ ] Rerun DRC and zone fills before exporting CAM files to ensure proper results
-* [ ] Export gerber/drill files using plot_gerbers.py script
+* [ ] Inspect layout in 3D viewer one last time
+* [ ] Export gerber/drill, BOM, and PnP files by calling `make`
 * [ ] Visually verify final CAM files to ensure no obvious misalignments, issues with paste and mask size / location
 
 ## Schematic Review
 ### General
 
 * [ ] CAD ERC 100% clean. If some errors are invalid due to toolchain quirks, each exception must be inspected and signed
-off as invalid.
-* [ ] Verify pin numbers of all schematic symbols against datasheet or external interface specification document (if not yet board proven).
+off as invalid
+* [ ] Verify pin numbers of all schematic symbols against datasheet or external interface specification document (if not yet board proven)
 * [ ] Schematic symbol matches chosen component package
 
 #### Passive components

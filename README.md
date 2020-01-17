@@ -1,36 +1,42 @@
 # Template Hardware Project
 
-## To begin a new project / board revision
-`make new NAME="project-name" VER="version" DESIGNER="Your Name"`
+## Generate production files
+`make`
 
-### Note 
+* generates zipped gerbers, BOM, and iBOM PnP file
+
+## Begin a new project / board revision
+`make new NAME="project-name" VERSION="version" DESIGNER="Your Name"`
+
 * `NAME` is the file name of project and is required, no spaces allowed
-* `VER` is optional and defaults to `0.1`
+* `VERSION` is optional and defaults to `0.1`, must be unique
 * `DESIGNER` is optional and defaults to `Josh Johnson`
 
-## To generate gerbers
+## Generate gerbers
 `make gerb` 
 
-### Note
 * requires python3 and a small number of dependencies
 
-## To generate BOM
+## Generate BOM
 `make bom`
 
-### Note
 * utilises custom BOM format found in `scripts/josh_bom.xsl`
 
-## To panelise a board
+## Generate InteractiveHTMLBom
+`make pnp`
+
+* requires [InteractiveHTMLBom](https://github.com/openscopeproject/InteractiveHtmlBom) to be installed in `~/.kicad_plugins/`
+* generates ibom according to settings from pcbnew
+
+## Panelise a board
 `make panel`
 
-### Note
-* Requires `*.kicad_pcb` file to be located at `hardware/ver/panel`
+* Requires `*.kicad_pcb` file to be located at `hardware/version/panel`
 * Utilises [kicad-util](https://gitlab.com/dren.dk/kicad-util), which requires java to be installed
 
-## To generate gerbers for panel
+## Generate gerbers for panel
 `make panel-gerb` 
 
-### Note
-* Requires `output-*.kicad_pcb` file to be located at `hardware/ver/panel`
+* Requires `output.project-name.kicad_pcb` file to be located at `hardware/version/panel`
 
 
