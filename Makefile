@@ -4,8 +4,8 @@ DESIGNER?=Josh Johnson
 
 prod-files:
 	make gerb
-	make bom
 	make pnp
+	make bom
 
 new:
 	git submodule update --init --recursive --progress
@@ -17,7 +17,6 @@ gerb:
 
 bom:
 	cd hardware/$(VERSION) && python3 ../../scripts/josh_bom.py *.xml bom/BOM.csv
-	libreoffice --calc hardware/$(VERSION)/bom/BOM.csv
 
 pnp: 
 	cd hardware/$(VERSION) && python3 "$(HOME)/.kicad_plugins/InteractiveHtmlBom/InteractiveHtmlBom/generate_interactive_bom.py" *.kicad_pcb
