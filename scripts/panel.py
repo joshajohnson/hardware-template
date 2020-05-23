@@ -28,7 +28,7 @@ while(True):
     usrHoleDia = input("Hole Diameter, currently {}mm: ".format(holeDia))
     usrHoleInset = input("Hole Inset, currently {}. Enter inset, flush, or a custom number: ".format(holeInsetWord))
     usrHolePitch = input("Hole Pitch, currently {}mm: ".format(pitch))
-    usrTabWidth = input("Tab Width, default 2.5mm: ")
+    usrTabWidth = input("Tab Width, currently {}mm: ".format(tabWidth))
 
     if usrFilletRadius:
         filletRadius = float(usrFilletRadius)
