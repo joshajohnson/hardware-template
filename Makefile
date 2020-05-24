@@ -18,7 +18,7 @@ gerb:
 bom:
 	cd hardware/$(VERSION) && python3 ../../scripts/josh_bom.py *.xml bom/BOM.csv
 
-pnp: 
+pnp:
 	cd hardware/$(VERSION) && python3 "$(HOME)/.kicad_plugins/InteractiveHtmlBom/InteractiveHtmlBom/generate_interactive_bom.py" *.kicad_pcb
 
 panel:
@@ -26,3 +26,8 @@ panel:
 
 panel-gerb:
 	python3 scripts/plot_gerbers.py hardware/$(VERSION)/panel/output.*
+
+init:
+	rm -r .git
+	git submodule add git@github.com:joshajohnson/josh-kicad-lib.git
+
