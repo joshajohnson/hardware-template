@@ -6,7 +6,15 @@
 * generates zipped gerbers, BOM, and iBOM PnP file
 
 ## Init Repo
-`make init`
+* Due to GitHub template not supporting submodules yet, the below process is required upon first use to configure.
+```
+git clone git@github.com:joshajohnson/hardware-template.git
+mv hardware-template project-name
+cd project-name
+make init
+```
+
+* Configure new git repo
 
 ## Begin a new project / board revision
 `make new NAME="project-name" VERSION="version" DESIGNER="Your Name"`
