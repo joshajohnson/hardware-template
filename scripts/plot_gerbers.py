@@ -165,4 +165,6 @@ for filename in  fab_files:
         zf.write(absname, arcname)
 zf.close()
 
+print("Did you remember to follow the release process???")
+
 # We have just generated your plotfiles with a single script
