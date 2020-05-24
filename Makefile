@@ -31,3 +31,7 @@ init:
 	rm -r .git
 	git submodule add git@github.com:joshajohnson/josh-kicad-lib.git
 
+init:
+	rm -r .git
+	git init
+	git submodule add git@github.com:joshajohnson/josh-kicad-lib.git

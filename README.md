@@ -5,6 +5,9 @@
 
 * generates zipped gerbers, BOM, and iBOM PnP file
 
+## Init Repo
+`make init`
+
 ## Begin a new project / board revision
 `make new NAME="project-name" VERSION="version" DESIGNER="Your Name"`
 
