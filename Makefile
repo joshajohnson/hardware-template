@@ -28,10 +28,6 @@ panel-gerb:
 	python3 scripts/plot_gerbers.py hardware/$(VERSION)/panel/output.*
 
 init:
-	rm -r .git
-	git submodule add git@github.com:joshajohnson/josh-kicad-lib.git
-
-init:
-	rm -r .git
+	rm -rf .git
 	git init
 	git submodule add git@github.com:joshajohnson/josh-kicad-lib.git
