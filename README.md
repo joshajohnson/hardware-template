@@ -37,18 +37,7 @@ make init
 ## Generate InteractiveHTMLBom
 `make pnp`
 
-* requires [InteractiveHTMLBom](https://github.com/openscopeproject/InteractiveHtmlBom) to be installed in `~/.kicad_plugins/`
+* requires [InteractiveHTMLBom](https://github.com/openscopeproject/InteractiveHtmlBom) to be installed in `~/local/share/kicad/5.99/scripting/plugins`
 * generates ibom according to settings from pcbnew
-
-## Panelise a board
-`make panel`
-
-* Requires `*.kicad_pcb` file to be located at `hardware/version/panel`
-* Utilises [kicad-util](https://gitlab.com/dren.dk/kicad-util), which requires java to be installed
-
-## Generate gerbers for panel
-`make panel-gerb` 
-
-* Requires `output.project-name.kicad_pcb` file to be located at `hardware/version/panel`
 
 

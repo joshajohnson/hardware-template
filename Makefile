@@ -19,13 +19,7 @@ bom:
 	cd hardware/$(VERSION) && python3 ../../scripts/josh_bom.py *.xml bom/BOM.csv
 
 pnp:
-	cd hardware/$(VERSION) && python3 "$(HOME)/.kicad_plugins/InteractiveHtmlBom/InteractiveHtmlBom/generate_interactive_bom.py" *.kicad_pcb
-
-panel:
-	python3 scripts/panel.py hardware/$(VERSION)/panel/*.kicad_pcb
-
-panel-gerb:
-	python3 scripts/plot_gerbers.py hardware/$(VERSION)/panel/output.*
+	cd hardware/$(VERSION) && python3 "$(HOME)/josh/.local/share/kicad/5.99/scripting/plugins/InteractiveHtmlBom/InteractiveHtmlBomgenerate_interactive_bom.py" *.kicad_pcb
 
 init:
 	rm -rf .git
